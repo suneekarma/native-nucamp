@@ -5,7 +5,7 @@ import { CAMPSITES } from '../shared/campsites';
 
 function RenderCampsite({campsite}) {
 
-    if (campsite) {
+    if (campsite) { 
         return (
             <Card
                 featuredTitle={campsite.name}
