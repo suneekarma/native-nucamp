@@ -29,23 +29,23 @@ class Reservation extends Component {
   };
 
   toggleModal() {
-    this.setState({showModal: !this.state.showModal});
-}
+    this.setState({ showModal: !this.state.showModal });
+  }
 
-handleReservation() {
+  handleReservation() {
     console.log(JSON.stringify(this.state));
     this.toggleModal();
-}
+  }
 
-resetForm() {
+  resetForm() {
     this.setState({
-        campers: 1,
-        hikeIn: false,
-        date: new Date(),
-        showCalendar: false,
-        showModal: false
+      campers: 1,
+      hikeIn: false,
+      date: new Date(),
+      showCalendar: false,
+      showModal: false,
     });
-}
+  }
 
   render() {
     return (

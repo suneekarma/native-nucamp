@@ -75,6 +75,26 @@ export const addCampsites = (campsites) => ({
   payload: campsites,
 });
 
+export const postComment = ({ campsiteId, rating, author, text }) => (
+  dispatch
+) => {
+  const newComment = {
+    campsiteId,
+    rating,
+    author,
+    text,
+  };
+  newComment.date = new Date();
+  setTimeout(() => {
+    dispatch(addComment(newComment));
+  }, 1000);
+};
+
+export const addComment = (comment) => ({
+  type: ActionTypes.ADD_COMMENT,
+  payload: comment,
+});
+
 export const fetchPromotions = () => (dispatch) => {
   dispatch(promotionsLoading());
 
