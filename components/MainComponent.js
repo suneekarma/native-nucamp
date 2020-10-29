@@ -247,7 +247,7 @@ const MainNavigator = createDrawerNavigator(
           <Icon name="heart" type="font-awesome" size={24} color={tintColor} />
         ),
       },
-    },
+    }, 
 
     About: {
       screen: AboutNavigator,
