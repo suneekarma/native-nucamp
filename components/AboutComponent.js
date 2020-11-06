@@ -7,7 +7,7 @@ import Loading from "./LoadingComponent";
 import * as Animatable from "react-native-animatable";
 
 const mapStateToProps = (state) => {
-  return {
+  return { 
     partners: state.partners,
   };
 };
